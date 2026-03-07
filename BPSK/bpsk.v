@@ -11,7 +11,7 @@
     wire signed [15:0]sine_in;
     wire binary_in;
     
-    dds_sine_wave uut1 (
+    sine_wave uut1 (
             .clk        (clk     ),
             .rst        (rst     ),
             .fcw        (32'd429496730),
