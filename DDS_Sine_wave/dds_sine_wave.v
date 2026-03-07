@@ -19,7 +19,7 @@ module dds_sine_wave (
     assign lut_addr = phase_acc[31:24];
     
     initial begin
-        $readmemh("C:/Users/Tanuku Devisaikumar/Downloads/sine_lut.hex",sine_lut);
+        $readmemh("sine_lut.hex",sine_lut);
     end
     
     always@(posedge clk or posedge rst) begin
