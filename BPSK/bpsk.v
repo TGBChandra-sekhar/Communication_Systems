@@ -1,4 +1,6 @@
- module bpsk (
+`timescale 1ns / 1ps
+
+module bpsk (
        clk,
        rst,
        bpsk_out
@@ -10,8 +12,15 @@
     
     wire signed [15:0]sine_in;
     wire binary_in;
+    wire clk_1p023;
     
-    sine_wave uut1 (
+    clk_div_40 uut3 (
+        .clk        (clk      ),        
+        .rst        (rst      ),
+        .clk_1p023  (clk_1p023) 
+    );
+    
+    dds_sine_wave uut1 (
             .clk        (clk     ),
             .rst        (rst     ),
             .fcw        (32'd429496730),
@@ -21,6 +30,7 @@
     binary_data uut2 (
            .clk         (clk       ),
            .rst         (rst       ),
+           .en          (clk_1p023 ),
            .binary_out  (binary_in)
     );
     
@@ -37,5 +47,3 @@
             end  
         end
     end
-        
- endmodule
