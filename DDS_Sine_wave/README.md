@@ -201,4 +201,5 @@ Possible extensions of this project:
 **Chandra Sekhar Tanuku**
 ---
 B.Tech Electronics and Communication Engineering
+---
 Focus Areas: **VLSI Design, FPGA, Digital Communication Systems**
