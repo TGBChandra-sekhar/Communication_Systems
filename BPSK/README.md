@@ -236,3 +236,14 @@ Reset is asserted for one clock cycle before normal operation.
 * BPSK demodulator
 * BER measurement
 * AWGN channel modeling
+
+  
+---
+
+## Author
+
+**Chandra Sekhar Tanuku**
+---
+* B.Tech Electronics and Communication Engineering
+* Focus Areas: **VLSI Design, FPGA, Digital Communication Systems**
+
