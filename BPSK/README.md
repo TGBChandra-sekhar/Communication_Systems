@@ -243,7 +243,6 @@ Reset is asserted for one clock cycle before normal operation.
 ## Author
 
 **Chandra Sekhar Tanuku**
----
 * B.Tech Electronics and Communication Engineering
 * Focus Areas: **VLSI Design, FPGA, Digital Communication Systems**
 
